@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionObject  Path="Post_Button" 
+                  Label="Form Post Button" 
+                  Description="A button whos action is POST rather than GET." 
+                  Type="object">
+
+                  <Initiate Name="Chart.Text.0.Content" Value="Submit" />
+                  <Initiate Name="Chart.Text.1.Content" Value="Submit to Webservice" />
+                  <Initiate Name="Chart.Text.2.Content" Value="fruit=banana|species=monkey" />
+                  
+                  <Text Label="Button Text" Type="Text" />
+                  <Text Label="Webservice URL" Type="Text" Initial="http://www.google.com" />
+                  <Text Label="Parameters" Type="Text" Initial="fruit=apple" />
+                  <Text Label="Enable Condition" Type="Text" Initial="1" />
+
+                  <PropertiesPage Version="12" File="DynProperties.qvpp" />
+</ExtensionObject>

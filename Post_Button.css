@@ -1,0 +1,28 @@
+/*
+|--------------------------------------------------------------------------
+| The Style for the Button Object
+|--------------------------------------------------------------------------
+| 
+| This file controls the design, look and feel of the button object
+| that gets created on the page.  It is specifically designed to tie in
+| with the look and feel of the ACI project.
+|
+*/
+
+button.Post_Button_Extension {
+	float: right;
+	margin : 5px;
+	background-color: #808080;
+	padding-right: 12px;
+	padding-left: 12px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #FFF;
+	font: tahoma;
+	font-size: 14pt;
+	cursor: pointer;
+}
+
+button.Post_Button_Extension:disabled {
+	color: #A0A0A0;
+};
