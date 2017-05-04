@@ -48,7 +48,19 @@ Qv.AddExtension("Post_Button",
                 mysnippet += "<button type=\"submit\" class=\"Post_Button_Extension\" >"+button_text+"</button>";
                 mysnippet += "<input type=\"hidden\" name=\"postData\" value=\""+parameters+"\" />";
                 mysnippet += "</form>";
-            $('.Post_Button').append(mysnippet);
+            $('.Post_Button').append(mysnippet)
+                             .click(function(e){
+                                e.preventDefault();
+
+                                $.ajax({
+                                type: "POST",
+                                url: service_URL,
+                                data: parameters,
+                                success: console.log('ok')
+                              });
+
+
+                             })
 
             /*
             |------------------------------------------------------------
