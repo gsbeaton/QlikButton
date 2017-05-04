@@ -53,10 +53,11 @@ Qv.AddExtension("Post_Button",
                                 e.preventDefault();
 
                                 $.ajax({
-                                type: "POST",
+                                type: "GET",
                                 url: service_URL,
                                 data: parameters,
-                                success: console.log('ok')
+                                success: console.log('ok'),
+                                dataType: "json"
                               });
 
 
